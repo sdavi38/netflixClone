@@ -1,0 +1,109 @@
+:root{
+    --red:#e50914;
+    --black:#141414;
+    --text:#aaa;
+    --textLigth:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ background: var(--black);
+ font-family: 'Arial', Times, serif;
+ color: var(--textLigth);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container{
+    margin-left: 20px;
+}
+.banner .container{
+    width: 70%;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 15px;
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    color: var(--red);
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--textLigth);
+    transition: 0.3s all;
+
+ 
+}
+nav a:hover{
+    color: var(--text)
+}
+
+/*Banner*/
+.banner{
+    display: flex;
+    height: 400px;
+    font-size: 20px;
+
+    background:linear-gradient(rgb(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/banner.jpg');
+    background-size: cover;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.description{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    
+}
+.title{
+    margin-top: 5%;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+.button{
+    border: none;
+    border-radius: 5%;
+    color: var(--textLigth);
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-right: 15px;
+    width: 200px;
+    font-size: 12px;
+
+    background-color: rgba(0,0,0,.50);
+    cursor: pointer;
+    transition: 2s ease all;
+}
+    .button i{
+  margin-right: 6px;
+    }
+.button:hover{
+    background: var(--textLigth);
+    color: var(--black);
+}
+.box-filme{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
